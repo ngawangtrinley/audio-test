@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ལག་ལེན་སོ་བདུན་མ། 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0.65, end: 44.18 },
+    { label: "b", start: 44.43, end: 130.17 },
+    { label: "c", start: 130.42, end: 137.53 },
+    { label: "d", start: 137.78, end: 151.74 },
+    { label: "e", start: 151.99, end: 173.95 },
+    { label: "f", start: 174.2, end: 276.28 },
+    { label: "g", start: 276.53, end: 333.85 },
+    { label: "h", start: 334.1, end: 354.12 },
+    { label: "i", start: 354.37, end: 383.79 },
+    { label: "j", start: 384.04, end: 473.11 },
+    { label: "k", start: 473.36, end: 486.21 },
+    { label: "l", start: 486.46, end: 508.29 },
+    { label: "m", start: 508.54, end: 624.36 },
+    { label: "n", start: 624.61, end: 713.96 },
+    { label: "o", start: 714.21, end: 754.15 },
+    { label: "p", start: 754.4, end: 806.13 },
+    { label: "q", start: 806.38, end: 825.31 },
+    { label: "r", start: 825.56, end: 950.36 },
+    { label: "s", start: 950.61, end: 1038.9 },
+    { label: "t", start: 1039.15, end: 1092.82 },
+    { label: "u", start: 1093.07, end: 1143.36 },
+    { label: "v", start: 1143.61, end: 1252.16 },
+    { label: "w", start: 1252.41, end: 1293.63 },
+    { label: "x", start: 1293.88, end: 1345.67 },
+    { label: "y", start: 1345.92, end: 1379.67 },
+    { label: "z", start: 1379.92, end: 1492.57 },
+    { label: "aa", start: 1492.82, end: 1559.47 },
+    { label: "ab", start: 1559.72, end: 1581.52 },
+    { label: "ac", start: 1581.77, end: 1614.59 },
+    { label: "ad", start: 1614.84, end: 1706.64 },
+    { label: "ae", start: 1706.89, end: 1760.79 },
+    { label: "af", start: 1761.04, end: 1782.78 },
+    { label: "ag", start: 1783.03, end: 1860.37 },
+    { label: "ah", start: 1860.62, end: 1904.4 },
+    { label: "ai", start: 1904.65, end: 1954.2 },
+    { label: "aj", start: 1954.45, end: 2028.62 },
+    { label: "ak", start: 2028.87, end: 2065.92 },
+    { label: "al", start: 2066.17, end: 2144 },
+    { label: "am", start: 2144.25, end: 2152.93 },
+    { label: "an", start: 2153.18, end: 2158.37 },
+    { label: "ao", start: 2158.62, end: 2235.96 },
+    { label: "ap", start: 2236.21, end: 2404.7 },
+    { label: "aq", start: 2404.95, end: 2453.9 },
+    { label: "ar", start: 2454.15, end: 2497.54 },
+    { label: "as", start: 2497.79, end: 2518.92 },
+    { label: "at", start: 2519.17, end: 2591.08 },
+    { label: "au", start: 2591.33, end: 2608.48 },
+    { label: "av", start: 2608.73, end: 2615.84 },
+    { label: "aw", start: 2616.09, end: 2656.63 },
+    { label: "ax", start: 2656.88, end: 2728.86 },
+    { label: "ay", start: 2729.11, end: 2749.22 },
+    { label: "az", start: 2749.47, end: 2757.55 },
+    { label: "ba", start: 2757.8, end: 2786.47 },
+    { label: "bb", start: 2786.72, end: 2901.28 },
+    { label: "bc", start: 2901.53, end: 2923.56 },
+    { label: "bd", start: 2923.81, end: 2960.46 },
+    { label: "be", start: 2960.71, end: 2980.64 },
+    { label: "bf", start: 2980.89, end: 3040.42 },
+    { label: "bg", start: 3040.67, end: 3076.93 },
+    { label: "bh", start: 3077.18, end: 3129.9 },
+    { label: "bi", start: 3130.15, end: 3154.18 },
+    { label: "bj", start: 3154.43, end: 3226.01 },
+    { label: "bk", start: 3226.26, end: 3259.42 },
+    { label: "bl", start: 3259.67, end: 3312.78 },
+    { label: "bm", start: 3313.03, end: 3380.43 },
+    { label: "bn", start: 3380.68, end: 3440.66 },
+    { label: "bo", start: 3440.91, end: 3494.25 },
+    { label: "bp", start: 3494.5, end: 3505.8 },
+    { label: "bq", start: 3506.05, end: 3625.53 },
+    { label: "br", start: 3625.78, end: 3689.47 },
+    { label: "bs", start: 3689.72, end: 3738.76 },
+    { label: "bt", start: 3739.01, end: 3755.51 },
+    { label: "bu", start: 3755.76, end: 3837.18 },
+    { label: "bv", start: 3837.43, end: 3918.23 },
+    { label: "bw", start: 3918.48, end: 3946.09 },
+    { label: "bx", start: 3946.34, end: 3958.03 },
+    { label: "by", start: 3958.28, end: 4056.5 },
+    { label: "bz", start: 4056.75, end: 4127.93 },
+    { label: "ca", start: 4128.18, end: 4182.13 },
+    { label: "cb", start: 4182.38, end: 4207.19 },
+    { label: "cc", start: 4207.44, end: 4235.95 },
+    { label: "cd", start: 4236.2, end: 4378.73 },
+    { label: "ce", start: 4378.98, end: 4412.12 },
+    { label: "cf", start: 4412.37, end: 4437.94 },
+    { label: "cg", start: 4438.19, end: 4484.5 },
+    { label: "ch", start: 4484.75, end: 4570.33 },
+    { label: "ci", start: 4570.58, end: 4610.65 },
+    { label: "cj", start: 4610.9, end: 4636.1 },
+    { label: "ck", start: 4636.35, end: 4662.1 },
+    { label: "cl", start: 4662.35, end: 4743.29 },
+    { label: "cm", start: 4743.54, end: 4766.34 },
+    { label: "cn", start: 4766.59, end: 4784.85 },
+    { label: "co", start: 4785.1, end: 4833.69 },
+    { label: "cp", start: 4833.94, end: 4955.07 },
+    { label: "cq", start: 4955.32, end: 5005.98 },
+    { label: "cr", start: 5006.23, end: 5034.07 },
+    { label: "cs", start: 5034.32, end: 5059.02 },
+    { label: "ct", start: 5059.27, end: 5194.44 },
+    { label: "cu", start: 5194.69, end: 5230.9 },
+    { label: "cv", start: 5231.15, end: 5267.51 },
+    { label: "cw", start: 5267.76, end: 5286.35 },
+    { label: "cx", start: 5286.6, end: 5461.66 },
+    { label: "cy", start: 5461.91, end: 5531.82 },
+    { label: "cz", start: 5532.07, end: 5594.26 },
+    { label: "da", start: 5594.51, end: 5619.32 },
+    { label: "db", start: 5619.57, end: 5846.25 },
+    { label: "dc", start: 5846.5, end: 5858.26 },
+    { label: "dd", start: 5858.51, end: 5930.36 },
+    { label: "de", start: 5930.61, end: 5947.62 },
+    { label: "df", start: 5947.87, end: 6053.51 },
+    { label: "dg", start: 6053.76, end: 6081.18 },
+    { label: "dh", start: 6081.43, end: 6138.11 },
+    { label: "di", start: 6138.36, end: 6194.77 },
+    { label: "dj", start: 6195.02, end: 6313.74 },
+    { label: "dk", start: 6313.99, end: 6378.17 },
+    { label: "dl", start: 6378.42, end: 6409.82 },
+    { label: "dm", start: 6410.07, end: 6426.81 },
+    { label: "dn", start: 6427.06, end: 6635.86 },
+    { label: "do", start: 6636.11, end: 6679.92 },
+    { label: "dp", start: 6680.17, end: 6705.42 },
+    { label: "dq", start: 6705.67, end: 6732.54 },
+    { label: "dr", start: 6732.79, end: 6935.45 },
+    { label: "ds", start: 6935.7, end: 6963.88 },
+    { label: "dt", start: 6964.13, end: 6984.3 },
+    { label: "du", start: 6984.55, end: 7022.26 },
+    { label: "dv", start: 7022.51, end: 7091.13 },
+    { label: "dw", start: 7091.38, end: 7121.74 },
+    { label: "dx", start: 7121.99, end: 7205.14 },
+    { label: "dy", start: 7205.39, end: 7227 },
+    { label: "dz", start: 7227.25, end: 7430.02 },
+    { label: "ea", start: 7430.27, end: 7563.61 },
+    { label: "eb", start: 7563.86, end: 7573.91 },
+    { label: "ec", start: 7574.16, end: 7632.62 },
+    { label: "ed", start: 7632.87, end: 7678.51 },
+    { label: "ee", start: 7678.76, end: 7689.1 },
+    { label: "ef", start: 7689.35, end: 7700.81 },
+    { label: "eg", start: 7701.06, end: 7879.57 },
+    { label: "eh", start: 7879.82, end: 8037.53 },
+    { label: "ei", start: 8037.78, end: 8055.9 },
+    { label: "ej", start: 8056.15, end: 8086.91 },
+    { label: "ek", start: 8087.16, end: 8101.79 },
+    { label: "el", start: 8102.04, end: 8217.1 },
+    { label: "em", start: 8217.35, end: 8261.16 },
+    { label: "en", start: 8261.41, end: 8265 },
+    { label: "eo", start: 8265.25, end: 8281.57 },
+    { label: "ep", start: 8281.82, end: 8456.74 },
+    { label: "eq", start: 8456.99, end: 8541.53 },
+    { label: "er", start: 8541.78, end: 8556.3 },
+    { label: "es", start: 8556.55, end: 8597.25 },
+    { label: "et", start: 8597.5, end: 8727.16 },
+    { label: "eu", start: 8727.41, end: 8760.49 },
+    { label: "ev", start: 8760.74, end: 8793.9 },
+    { label: "ew", start: 8794.15, end: 8838.28 },
+    { label: "ex", start: 8838.53, end: 8931.01 },
+    { label: "ey", start: 8931.26, end: 8975.93 },
+    { label: "ez", start: 8976.18, end: 9047.68 },
+    { label: "fa", start: 9047.93, end: 9123.7 },
+    { label: "fb", start: 9123.95, end: 9257.96 },
+    { label: "fc", start: 9258.21, end: 9277.45 },
+    { label: "fd", start: 9277.7, end: 9286.1 },
+    { label: "fe", start: 9286.35, end: 9380.28 },
+    { label: "ff", start: 9380.53, end: 9478.08 },
+    { label: "fg", start: 9478.33, end: 9496.96 },
+    { label: "fh", start: 9497.21, end: 9530.19 },
+    { label: "fi", start: 9530.44, end: 9639.76 },
+    { label: "fj", start: 9640.01, end: 9783.95 },
+    { label: "fk", start: 9784.2, end: 9811.44 },
+    { label: "fl", start: 9811.69, end: 9845.04 },
+    { label: "fm", start: 9845.29, end: 9890.81 },
+    { label: "fn", start: 9891.06, end: 9953.12 },
+    { label: "fo", start: 9953.37, end: 9984.54 },
+    { label: "fp", start: 9984.79, end: 10049.97 },
+    { label: "fq", start: 10050.22, end: 10060.22 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "ལག་ལེན་སོ་བདུན་མ།-01-B001-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="content">
+
+<div class="mt"><span class="mt">རྒྱལ་སྲས་ལག་ལེན་སོ་བདུན་མ། </span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ta" class="txs">1 ན་མོ་ལོ་ཀེ་ཤྭ་ར་ཡེ། །</div></div>
+<div class="m"><div id="Tb" class="txs">གང་གིས་ཆོས་ཀུན་འགྲོ་འོང་མེད་གཟིགས་ཀྱང་། །</div></div>
+<div class="m"><div id="Tc" class="txs">འགྲོ་བའི་དོན་ལ་གཅིག་ཏུ་བརྩོན་མཛད་པའི། །</div></div>
+<div class="m"><div id="Td" class="txs">བླ་མ་མཆོག་དང་སྤྱན་རས་གཟིགས་མགོན་ལ། །</div></div>
+<div class="m"><div id="Te" class="txs">རྟག་ཏུ་སྒོ་གསུམ་གུས་པས་ཕྱག་འཚལ་ལོ། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tf" class="txs">2 ཕན་བདེའི་འབྱུང་གནས་རྫོགས་པའི་མཉེན་པ་རྣམས། །</div></div>
+<div class="m"><div id="Tg" class="txs">དམ་ཆོས་བསྒྲུབས་ལས་བྱུང་སྟེ་དེ་ཡང་ནི། །</div></div>
+<div class="m"><div id="Th" class="txs">དེ་ཡི་ལག་ལེན་ཤེས་ལ་རག་ལས་པས། །</div></div>
+<div class="m"><div id="Ti" class="txs">རྒྱལ་སྲས་རྣམས་ཀྱི་ལག་ལེན་བཤད་པར་བྱ། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tj" class="txs">3 དལ་འབྱོར་གྲུ་ཆེན་རྙེད་དཀའ་ཐོབ་དུས་འདིར། །</div></div>
+<div class="m"><div id="Tk" class="txs">བདག་གཞན་འཁོར་བའི་མཚོ་ལས་བསྒྲལ་བྱའི་ཕྱིར། །</div></div>
+<div class="m"><div id="Tl" class="txs">ཉིན་དང་མཚན་དུ་གཡེལ་བ་མེད་པར་ནི། །</div></div>
+<div class="m"><div id="Tm" class="txs">ཉན་སེམས་སྒོམ་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tn" class="txs">4 གཉེན་གྱི་ཕྱོགས་ལ་འདོད་ཆགས་ཆུ་ལྟར་གཡོ། །</div></div>
+<div class="m"><div id="To" class="txs">དགྲ་ཡི་ཕྱོགས་ལ་ཞེ་སྡང་མེ་ལྟར་འབར། །</div></div>
+<div class="m"><div id="Tp" class="txs">བླང་དོར་བརྗེད་པའི་གཏི་མུག་མུན་ནག་ཅན། །</div></div>
+<div class="m"><div id="Tq" class="txs">ཕ་ཡུལ་སྤོང་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tr" class="txs">5 ཡུལ་ངན་སྤངས་པས་ཉོན་མོངས་རིམ་གྱིས་འགྲིབ། །</div></div>
+<div class="m"><div id="Ts" class="txs">རྣམ་གཡེང་མེད་པས་དགེ་སྦྱོར་ངང་གིས་འཕེལ། །</div></div>
+<div class="m"><div id="Tt" class="txs">རིག་པ་དྭངས་པས་ཆོས་ལ་ངེས་ཤེས་སྐྱེ། །</div></div>
+<div class="m"><div id="Tu" class="txs">དབེན་པ་བསྟེན་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tv" class="txs">6 ཡུན་རིང་འགྲོགས་པའི་མཛའ་བཤེས་སོ་སོར་འབྲལ། །</div></div>
+<div class="m"><div id="Tw" class="txs">འབད་པས་བསྒྲུབས་པའི་ནོར་རྫས་ཤུལ་དུ་ལུས། །</div></div>
+<div class="m"><div id="Tx" class="txs">ལུས་ཀྱི་མགྲོན་ཁང་རྣམ་ཤེས་མགྲོན་པོས་འབོར། །</div></div>
+<div class="m"><div id="Ty" class="txs">ཚེ་འདི་བློས་བཏང་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tz" class="txs">7 གང་དང་འགྲོགས་ན་དུག་གསུམ་འཕེལ་འགྱུར་ཞིང་། །</div></div>
+<div class="m"><div id="Taa" class="txs">ཐོས་བསམ་སྒོམ་པའི་བྱ་བ་ཉམས་འགྱུར་ལ། །</div></div>
+<div class="m"><div id="Tab" class="txs">བྱམས་དང་སྙིང་རྗེ་མེད་པར་སྒྱུར་བྱེད་པའི། །</div></div>
+<div class="m"><div id="Tac" class="txs">གྲོགས་ངན་སྤོང་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tad" class="txs">8 གང་ཞིག་བསྟེན་ན་ཉེས་པ་ཟད་འགྱུར་ཞིང་། །</div></div>
+<div class="m"><div id="Tae" class="txs">ཡོན་ཏན་ཡར་ངོའི་ཟླ་ལར་འཕེལ་འགྱུར་བའི། །</div></div>
+<div class="m"><div id="Taf" class="txs">བཤེས་གཉེན་དམ་པ་རང་གི་ལུས་བས་ཀྱང་། །</div></div>
+<div class="m"><div id="Tag" class="txs">གཅེས་པར་འཛིན་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tah" class="txs">9 རང་ཡང་འཁོར་བའི་བཙོན་རར་བཅིངས་པ་ཡི། །</div></div>
+<div class="m"><div id="Tai" class="txs">འཇིག་རྟེན་ལྷ་ཡིས་སུ་ཞིག་བསྐྱབ་པར་ནུས། །</div></div>
+<div class="m"><div id="Taj" class="txs">དེ་ཕྱིར་གང་ལ་སྐྱབས་ན་མི་བསླུ་བའི། །</div></div>
+<div class="m"><div id="Tak" class="txs">དཀོན་མཆོག་སྐྱབས་འགྲོ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tal" class="txs">10 ཤིན་ཏུ་བཟོད་དཀའི་ངན་སོང་སྡུག་བསྔལ་རྣམས། །</div></div>
+<div class="m"><div id="Tam" class="txs">སྡིག་པའི་ལས་ཀྱི་འབྲས་བུར་ཐུབ་པས་གསུངས། །</div></div>
+<div class="m"><div id="Tan" class="txs">དེ་ཕྱིར་སྲོག་ལ་བབས་ཀྱང་སྡིག་པའི་ལས། །</div></div>
+<div class="m"><div id="Tao" class="txs">ནམ་ཡང་མི་བྱེད་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tap" class="txs">11 སྲིད་གསུམ་བདེ་བ་རྩྭ་རྩེའི་ཟིལ་པ་བཞིན། །</div></div>
+<div class="m"><div id="Taq" class="txs">ཡུད་ཙམ་ཞིག་གིས་འཇིག་པའི་ཆོས་ཅན་ཡིན། །</div></div>
+<div class="m"><div id="Tar" class="txs">ནམ་ཡང་མི་འགྱུར་ཐར་པའི་གོ་འཕང་མཆོག །</div></div>
+<div class="m"><div id="Tas" class="txs">དོན་དུ་གཉེར་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tat" class="txs">12 ཐོག་མེད་དུས་ནས་བདག་ལ་བརྩེ་བ་ཡི། །</div></div>
+<div class="m"><div id="Tau" class="txs">མ་རྣམས་སྡུག་ན་རང་བདེས་ཅི་ཞིག་བྱ། །</div></div>
+<div class="m"><div id="Tav" class="txs">དེ་ཕྱིར་མཐའ་ཡས་སེམས་ཅན་བསྒྲལ་བྱའི་ཕྱིར། །</div></div>
+<div class="m"><div id="Taw" class="txs">བྱང་ཆུབ་སེམས་བསྐྱེད་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tax" class="txs">13 སྡུག་བསྔལ་མ་ལུས་བདག་བདེ་འདོད་ལས་བྱུང་། །</div></div>
+<div class="m"><div id="Tay" class="txs">རྫོགས་པའི་བྱང་ཆུབ་གཞན་ཕན་སེམས་ལས་འཁྲུངས། །</div></div>
+<div class="m"><div id="Taz" class="txs">དེ་ཕྱིར་བདག་བདེ་གཞན་གྱི་སྡུག་བསྔལ་དག །</div></div>
+<div class="m"><div id="Tba" class="txs">ཡང་དག་བརྗེ་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbb" class="txs">14 སུ་དག་འདོད་ཆེན་དབང་གིས་བདག་གི་ནོར། །</div></div>
+<div class="m"><div id="Tbc" class="txs">ཐམས་ཅད་འཕྲོག་གམ་འཕྲོག་ཏུ་འཇུག་ན་ཡང་། །</div></div>
+<div class="m"><div id="Tbd" class="txs">ལུས་དང་ལོངས་སྤྱོད་དུས་གསུམ་དགེ་བ་རྣམས། །</div></div>
+<div class="m"><div id="Tbe" class="txs">དེ་ལ་བསྔོ་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbf" class="txs">15 བདག་ལ་ཉེས་པ་ཅུང་ཟད་མེད་བཞིན་དུ། །</div></div>
+<div class="m"><div id="Tbg" class="txs">གང་དག་བདག་གི་མགོ་བོ་གཅོད་བྱེད་ནའང་། །</div></div>
+<div class="m"><div id="Tbh" class="txs">སྙིང་རྗེའི་དབང་གིས་དེ་ཡི་སྡིག་པ་རྣམས། །</div></div>
+<div class="m"><div id="Tbi" class="txs">བདག་ལ་ལེན་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbj" class="txs">16 འགའ་ཞིག་བདག་ལ་མི་སྙན་སྣ་ཚོགས་པ། །</div></div>
+<div class="m"><div id="Tbk" class="txs">སྟོང་གསུམ་ཁྱབ་པར་སྒྲོགས་པར་བྱེད་ན་ཡང་། །</div></div>
+<div class="m"><div id="Tbl" class="txs">བྱམས་པའི་སེམས་ཀྱིས་སླར་ཡང་དེ་ཉིད་ཀྱི། །</div></div>
+<div class="m"><div id="Tbm" class="txs">ཡོན་ཏན་བརྗོད་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbn" class="txs">17 འགྲོ་མང་འདུས་པའི་དབུས་སུ་འགའ་ཞིག་གིས། །</div></div>
+<div class="m"><div id="Tbo" class="txs">མཚང་ནས་བྲུས་ཤིང་ཚིག་ངན་སྨྲ་ན་ཡང་། །</div></div>
+<div class="m"><div id="Tbp" class="txs">དེ་ལ་དགེ་བའི་བཤེས་ཀྱི་འདུ་ཤེས་ཀྱིས། །</div></div>
+<div class="m"><div id="Tbq" class="txs">ཡོན་ཏན་བརྗོད་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbr" class="txs">18 བདག་གིས་བུ་བཞིན་གཅེས་པར་བསྐྱངས་པའི་མིས། །</div></div>
+<div class="m"><div id="Tbs" class="txs">བདག་ལ་དགྲ་བཞིན་ལྟ་བར་བྱེད་ན་ཡང་། །</div></div>
+<div class="m"><div id="Tbt" class="txs">ནད་ཀྱི་བཏབ་པའི་བུ་ལ་མ་བཞིན་དུ། །</div></div>
+<div class="m"><div id="Tbu" class="txs">ལྷག་པར་བརྩེ་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbv" class="txs">19 རང་དང་མཉམ་པའམ་དམན་པའི་སྐྱེ་བོ་ཡིས། །</div></div>
+<div class="m"><div id="Tbw" class="txs">ང་རྒྱལ་དབང་གིས་བརྙས་ཐབས་བྱས་ན་ཡང་། །</div></div>
+<div class="m"><div id="Tbx" class="txs">བླ་མ་བཞིན་དུ་གུས་པས་བདག་ཉིད་ཀྱི། །</div></div>
+<div class="m"><div id="Tby" class="txs">སྤྱི་བོར་ལེན་པ་རྒྱལ་སྲས་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbz" class="txs">20 འཚོ་བས་ཕོངས་ཤིང་རྟག་ཏུ་མི་ཡིས་བརྙས། །</div></div>
+<div class="m"><div id="Tca" class="txs">ཚབས་ཆེན་ནད་དང་གདོན་གྱིས་བཏབ་ཀྱང་སླར་། །</div></div>
+<div class="m"><div id="Tcb" class="txs">འགྲོ་ཀུན་སྡིག་སྡུག་བདག་ལ་ལེན་བྱེད་ཅིང་། །</div></div>
+<div class="m"><div id="Tcc" class="txs">ཞུམ་པ་མེད་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tcd" class="txs">21 སྙན་པར་གྲགས་ཤིང་འགྲོ་མང་སྤྱི་བོས་བཏུད། །</div></div>
+<div class="m"><div id="Tce" class="txs">རྣམ་ཐོས་བུ་ཡི་ནོར་འདྲ་ཐོབ་གྱུར་ཀྱང་། །</div></div>
+<div class="m"><div id="Tcf" class="txs">སྲིད་པའི་དཔལ་འབྱོར་སྙིང་པོ་མེད་གཟིགས་ནས། །</div></div>
+<div class="m"><div id="Tcg" class="txs">ཁེངས་པ་མེད་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tch" class="txs">22 རང་གི་ཞེ་སྡང་དགྲ་བོ་མ་ཐུལ་ན། །</div></div>
+<div class="m"><div id="Tci" class="txs">ཕྱི་རོལ་དགྲ་བོ་བཏུལ་ཞིང་འཕེལ་བར་འགྱུར་། །</div></div>
+<div class="m"><div id="Tcj" class="txs">དེ་ཕྱིར་བྱམས་དང་སྙིང་རྗེའི་དམག་དཔུང་གིས། །</div></div>
+<div class="m"><div id="Tck" class="txs">རང་རྒྱུད་འདུལ་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tcl" class="txs">23 འདོད་པའི་ཡོན་ཏན་ལན་ཚྭའི་ཆུ་དང་འདྲ། །</div></div>
+<div class="m"><div id="Tcm" class="txs">ཇི་ཙམ་སྤྱད་ཅིང་སྲེད་པ་འཕེལ་བར་འགྱུར། །</div></div>
+<div class="m"><div id="Tcn" class="txs">གང་ལ་ཞེན་ཆགས་སྐྱེ་བའི་དངོས་པོ་རྣམས། །</div></div>
+<div class="m"><div id="Tco" class="txs">འཕྲལ་ལ་སྤོང་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tcp" class="txs">24 ཇི་ལྟར་སྣང་བ་འདི་དག་རང་གི་སེམས། །</div></div>
+<div class="m"><div id="Tcq" class="txs">སེམས་ཉིད་གདོད་ནས་སྤྲོས་པའི་མཐའ་དང་བྲལ། །</div></div>
+<div class="m"><div id="Tcr" class="txs">དེ་ཉིད་ཤེས་ནས་གཟུང་འཛིན་མཚན་མ་རྣམས། །</div></div>
+<div class="m"><div id="Tcs" class="txs">ཡིད་ལ་མི་བྱེད་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tct" class="txs">25 ཡིད་དུ་འོང་བའི་ཡུལ་དང་འཕྲད་པ་ན། །</div></div>
+<div class="m"><div id="Tcu" class="txs">དབྱར་གྱི་དུས་ཀྱི་འཇའ་ཚོན་ཇི་བཞིན་དུ། །</div></div>
+<div class="m"><div id="Tcv" class="txs">མཛེས་པར་སྣང་ཡང་བདེན་པར་མེད་ལྟ་ཞིང་། །</div></div>
+<div class="m"><div id="Tcw" class="txs">ཞེན་ཆགས་སྤོང་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tcx" class="txs">26 སྡུག་བསྔལ་སྣ་ཚོགས་རྨི་ལམ་བུ་ཤི་ལྟར། །</div></div>
+<div class="m"><div id="Tcy" class="txs">འཁྲུལ་སྣང་བདེན་པར་བཟུང་བས་ཨ་ཐང་ཆད། །</div></div>
+<div class="m"><div id="Tcz" class="txs">དེ་ཕྱིར་མི་མཐུན་རྐྱེན་དང་འཕྲད་པའི་ཚེ། །</div></div>
+<div class="m"><div id="Tda" class="txs">འཁྲུལ་བར་ལྟ་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tdb" class="txs">27 བྱང་ཆུབ་འདོད་པས་ལུས་ཀྱང་གཏོང་དགོས་ན། །</div></div>
+<div class="m"><div id="Tdc" class="txs">ཕྱི་རོལ་དངོས་པོ་རྣམས་ལ་སྨོས་ཅི་དགོས། །</div></div>
+<div class="m"><div id="Tdd" class="txs">དེ་ཕྱིར་ལན་དང་རྣམ་སྨིན་མི་རེ་བའི། །</div></div>
+<div class="m"><div id="Tde" class="txs">སྦྱིན་པ་གཏོང་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tdf" class="txs">28 ཚུལ་ཁྲིམས་མེད་ན་རང་དོན་མི་འགྲུབ་ན། །</div></div>
+<div class="m"><div id="Tdg" class="txs">གཞན་དོན་སྒྲུབ་པར་འདོད་པ་གད་མོའི་གནས། །</div></div>
+<div class="m"><div id="Tdh" class="txs">དེ་ཕྱིར་སྲིད་པའི་འདུན་པ་མེད་པ་ཡི། །</div></div>
+<div class="m"><div id="Tdi" class="txs">ཚུལ་ཁྲིམས་བསྲུང་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tdj" class="txs">29 དགེ་བའི་ལོངས་སྤྱོད་འདོད་པའི་རྒྱལ་སྲས་ལ། །</div></div>
+<div class="m"><div id="Tdk" class="txs">གནོད་བྱེད་ཐམས་ཅད་རིན་ཆེན་གཏེར་དང་མཚུངས། །</div></div>
+<div class="m"><div id="Tdl" class="txs">དེ་ཕྱིར་ཀུན་ལ་ཞེ་འགྲས་མེད་པ་ཡི། །</div></div>
+<div class="m"><div id="Tdm" class="txs">བཟོད་པ་སྒོམ་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tdn" class="txs">30 རང་དོན་འབའ་ཞིག་སྒྲུབ་པའི་ཉན་རང་ཡང་། །</div></div>
+<div class="m"><div id="Tdo" class="txs">མགོ་ལ་མེ་ཤོར་བཟློག་ལྟར་བརྩོན་མཐོང་ན། །</div></div>
+<div class="m"><div id="Tdp" class="txs">འགྲོ་ཀུན་དོན་དུ་ཡོན་ཏན་འབྱུང་གནས་ཀྱི། །</div></div>
+<div class="m"><div id="Tdq" class="txs">བརྩོན་འགྲུས་རྩོམ་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tdr" class="txs">31 ཞི་གནས་རབ་ཏུ་ལྡན་པའི་ལྷག་མཐོང་གིས། །</div></div>
+<div class="m"><div id="Tds" class="txs">ཉོན་མོངས་རྣམ་པར་འཇོམས་པར་ཤེས་བྱས་ནས། །</div></div>
+<div class="m"><div id="Tdt" class="txs">གཟུགས་མེད་བཞི་ལས་ཡང་དག་འདས་པ་ཡི། །</div></div>
+<div class="m"><div id="Tdu" class="txs">བསམ་གཏན་སྒོམ་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tdv" class="txs">32 ཤེས་རབ་མེད་ན་ཕ་རོལ་ཕྱིན་ལྔ་ཡིས། །</div></div>
+<div class="m"><div id="Tdw" class="txs">རྫོགས་པའི་བྱང་ཆུབ་ཐོབ་པར་མི་ནུས་པས། །</div></div>
+<div class="m"><div id="Tdx" class="txs">ཐབས་དང་ལྡན་ཞིང་འཁོར་གསུམ་མི་རྟོག་པའི། །</div></div>
+<div class="m"><div id="Tdy" class="txs">ཤེས་རབ་སྒོམ་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tdz" class="txs">33 རང་གི་འཁྲུལ་བ་རང་གིས་མ་བརྟགས་ན། །</div></div>
+<div class="m"><div id="Tea" class="txs">ཆོས་པའི་གཟུགས་ཀྱིས་ཆོས་མིན་བྱེད་སྲིད་པས། །</div></div>
+<div class="m"><div id="Teb" class="txs">དེ་ཕྱིར་རྒྱུན་དུ་རང་གི་འཁྲུལ་བ་ལ། །</div></div>
+<div class="m"><div id="Tec" class="txs">བརྟགས་ནས་སྤོང་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ted" class="txs">34 ཉོན་མོངས་དབང་གིས་རྒྱལ་སྲས་གཞན་དག་གི། །</div></div>
+<div class="m"><div id="Tee" class="txs">ཉེས་པ་གླེང་ན་བདག་ཉིད་ཉམས་འགྱུར་བས། །</div></div>
+<div class="m"><div id="Tef" class="txs">ཐེག་པ་ཆེ་ལ་ཞུགས་པའི་གང་ཟག་གི། །</div></div>
+<div class="m"><div id="Teg" class="txs">ཉེས་པ་མི་སྨྲ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Teh" class="txs">35 རྙེད་བཀུར་དབང་གིས་ཕན་ཚུན་རྩོད་འགྱུར་ཞིང་། །</div></div>
+<div class="m"><div id="Tei" class="txs">ཐོས་བསམ་བསྒོམ་པའི་བྱ་བ་ཉམས་འགྱུར་བས། །</div></div>
+<div class="m"><div id="Tej" class="txs">མཛའ་བཤེས་ཁྱིམ་དང་སྦྱིན་བདག་ཁྱིམ་རྣམས་ལ། །</div></div>
+<div class="m"><div id="Tek" class="txs">ཆགས་པ་སྤོང་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tel" class="txs">36 རྩུབ་མོའི་ཚིག་གིས་གཞན་སེམས་འཁྲུག་འགྱུར་ཞིང་། །</div></div>
+<div class="m"><div id="Tem" class="txs">རྒྱལ་བའི་སྲས་ཀྱི་སྤྱོད་ཚུལ་ཉམས་འགྱུར་བས། །</div></div>
+<div class="m"><div id="Ten" class="txs">དེ་ཕྱིར་གཞན་གྱི་ཡིད་དུ་མི་འོང་བའི། །</div></div>
+<div class="m"><div id="Teo" class="txs">ཚིག་རྩུབ་སྤོང་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tep" class="txs">37 ཉོན་མོངས་གོམས་ན་གཉེན་པོས་བཟློག་དཀའ་བས། །</div></div>
+<div class="m"><div id="Teq" class="txs">དྲན་ཤེས་སྐྱེས་བུས་གཉེན་པོའི་མཚོན་བཟུང་ནས། །</div></div>
+<div class="m"><div id="Ter" class="txs">ཆགས་སོགས་ཉོན་མོངས་དང་པོ་སྐྱེས་མ་ཐག །</div></div>
+<div class="m"><div id="Tes" class="txs">འབུར་འཇོམས་བྱེད་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tet" class="txs">38 མདོར་ན་གང་དུ་སྤྱོད་ལམ་ཅི་བྱེད་ཀྱང་། །</div></div>
+<div class="m"><div id="Teu" class="txs">རང་གི་སེམས་ཀྱི་གནས་སྐབས་ཅི་འདྲ་ཞེས། །</div></div>
+<div class="m"><div id="Tev" class="txs">རྒྱུན་དུ་དྲན་དང་ཤེས་བཞིན་ལྡན་པ་ཡིས། །</div></div>
+<div class="m"><div id="Tew" class="txs">གཞན་དོན་སྒྲུབ་པ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tex" class="txs">39 དེ་ལྟར་བརྩོན་པས་བསྒྲུབས་པའི་དགེ་བ་རྣམས། །</div></div>
+<div class="m"><div id="Tey" class="txs">མཐའ་ཡས་འགྲོ་བའི་སྡུག་བསྔལ་བསལ་བྱའི་ཕྱིར་། །</div></div>
+<div class="m"><div id="Tez" class="txs">འཁོར་གསུམ་རྣམ་པར་དག་པའི་ཤེས་རབ་ཀྱིས། །</div></div>
+<div class="m"><div id="Tfa" class="txs">བྱང་ཆུབ་བསྔོ་བ་རྒྱལ་སྲས་ལག་ལེན་ཡིན། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tfb" class="txs">40 མདོ་རྒྱུད་བསྟན་བཅོས་རྣམས་ལས་གསུངས་པའི་དོན། །</div></div>
+<div class="m"><div id="Tfc" class="txs">དམ་པ་རྣམས་ཀྱི་གསུང་གི་རྗེས་འབྲངས་ནས། །</div></div>
+<div class="m"><div id="Tfd" class="txs">རྒྱལ་སྲས་རྣམས་ཀྱི་ལག་ལེན་སུམ་ཅུ་བདུན། །</div></div>
+<div class="m"><div id="Tfe" class="txs">རྒྱལ་སྲས་ལམ་ལ་སློབ་འདོད་དོན་དུ་བཀོད། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tff" class="txs">41 བློ་གྲོས་དམན་ཞིང་སྦྱངས་པ་ཆུང་བའི་ཕྱིར། །</div></div>
+<div class="m"><div id="Tfg" class="txs">མཁས་པ་དགྱེས་པའི་སྡེབ་སྦྱོར་མ་མཆིས་ཀྱང་། །</div></div>
+<div class="m"><div id="Tfh" class="txs">མདོ་དང་དམ་པའི་གསུང་ལ་བརྟེན་པའི་ཕྱིར། །</div></div>
+<div class="m"><div id="Tfi" class="txs">རྒྱལ་སྲས་ལག་ལེན་འཁྲུལ་མེད་ལེགས་པར་སེམས། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tfj" class="txs">42 འོན་ཀྱང་རྒྱལ་སྲས་སྤྱོད་པ་རླབས་ཆེན་རྣམས། །</div></div>
+<div class="m"><div id="Tfk" class="txs">བློ་དམན་བདག་འདྲས་གཏིང་དཔག་དཀའ་བའི་ཕྱིར། །</div></div>
+<div class="m"><div id="Tfl" class="txs">འགལ་དང་མ་འབྲེལ་ལ་སོགས་ཉེས་པའི་ཚོགས། །</div></div>
+<div class="m"><div id="Tfm" class="txs">དམ་པ་རྣམས་ཀྱིས་བཟོད་པར་མཛད་དུ་གསོལ། །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tfn" class="txs">43 དེ་ལས་བྱུང་བའི་དགེ་བས་འགྲོ་བ་ཀུན། །</div></div>
+<div class="m"><div id="Tfo" class="txs">དོན་དམ་ཀུན་རྫོབ་བྱང་ཆུབ་སེམས་མཆོག་གིས། །</div></div>
+<div class="m"><div id="Tfp" class="txs">སྲིད་དང་ཞི་བའི་མཐའ་ལ་མི་གནས་པའི། །</div></div>
+<div class="m"><div id="Tfq" class="txs">སྤྱན་རས་གཟིགས་མགོན་དེ་དང་མཚུངས་པར་ཤོག །</div></div>
+<div class="b">&nbsp;</div>
+<div class="m">ཅེས་པ་འདི་རང་གཞན་ལ་ཕན་པའི་དོན་དུ་ལུང་དང་རིགས་པ་སྨྲ་བའི་བཙུན་པ་ཐོགས་མེད་ཀྱིས་དངུལ་ཆུའི་རིན་ཆེན་ཕུག་ཏུ་སྦྱར་བའོ།། །།</div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="file://D:/Scripture App Builder/laglensodunma Audio/laglensodunma.mp3" />
+  </audio>
+</div>
+</div>
+
+</body>
+</html>
